@@ -1,0 +1,20 @@
+<?php
+// $Id: $
+
+/**
+ * @file
+ * Alters the menu item form to allow the administrator to specify additional
+ * attributes for the menu link
+ */
+
+/**
+ * Implements hook_menu_attriutes_info().
+ */
+function menu_attributes_track_menu_attribute_info() {
+  $info['data-track'] = array(
+    'label' => t('Tracking code'),
+    'description' => t('Code to track, formated in this way:<br /><strong>{"action":"Action","category":"Category","label":"Label"}</strong>.'),
+  );
+  
+  return $info;
+}

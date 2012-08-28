@@ -1,0 +1,6 @@
+; $Id: $
+name = Menu attributes track
+description = "Add data tracking to menu item"
+dependencies[] = menu
+dependencies[] = menu_attributes
+core = 6.x
